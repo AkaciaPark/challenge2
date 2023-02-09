@@ -7,7 +7,7 @@ Deve ser colocado esse [linter](https://pub.dev/packages/flutterando_analysis)
 
 Tela 1    | Tela 2
 :-------: | :-------:
-![Mockup!](/.readme_assets/pet_mockup01.png "Mockup 01") | ![Mockup!](/.readme_assets/pet_mockup02.png "Mockup 02")
+![Mockup!](/readme_assets/pet_mockup01.png "Mockup 01") | ![Mockup!](/readme_assets/pet_mockup02.png "Mockup 02")
 
 ## Critério de avaliação
   * Componentização

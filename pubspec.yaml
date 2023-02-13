@@ -65,7 +65,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
 
   assets:
-      - assets/images/
+      - assets/images/home_page_images/
+      - assets/images/icons/
 
   fonts:
    - family: Inter

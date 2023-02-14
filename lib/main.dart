@@ -1,4 +1,3 @@
-import 'package:challenge2/app/theme/custom_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,9 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Challenge 2',
-      theme: CustomTheme.theme,
+      theme: ThemeData(),
       debugShowCheckedModeBanner: false,
-      home:  Text('Olá mundo'),
+      home: Text('Oláááá'),
     );
   }
 }

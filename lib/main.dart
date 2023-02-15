@@ -1,3 +1,4 @@
+import 'package:challenge2/app/widgets_appBar/first_screen_widgets_appBar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Challenge 2',
       theme: ThemeData(),
       debugShowCheckedModeBanner: false,
-      home: Text('Oláááá'),
+      home: const FirstScreen(),
     );
   }
 }

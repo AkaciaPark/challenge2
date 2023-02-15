@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Challenge 2',
+      title: 'Challenge 2 ',
       theme: CustomTheme.themeData,
       debugShowCheckedModeBanner: false,
       home: const FirstScreen(),

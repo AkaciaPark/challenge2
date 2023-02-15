@@ -5,6 +5,10 @@ class MenuIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset('assets/images/icons/menu_icon.png');
+    return Image.asset(
+      'assets/images/icons/menu_icon.png',
+      width: 40,
+      height: 40,
+    );
   }
 }

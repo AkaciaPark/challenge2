@@ -6,22 +6,24 @@ class LocationText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children:const [
+      children: const [
         Text(
           'Location',
           style: TextStyle(
             fontWeight: FontWeight.normal,
             fontSize: 12,
-            color: Colors.black,
+            color: Colors.grey,
+            
             fontFamily: 'Inter',
           ),
         ),
         Text(
-          'Lalalalalalalalaland- Polo Norte',
+          'Casa do Papai Noel - Polo Norte',
           style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.normal,
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
             color: Colors.black,
+            letterSpacing: 0.4,
             fontFamily: 'Inter',
           ),
         ),

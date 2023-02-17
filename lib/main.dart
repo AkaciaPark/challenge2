@@ -1,5 +1,6 @@
+import 'package:challenge2/app/exercicio_primeira_tela.dart';
 import 'package:challenge2/app/theme/custom_theme.dart';
-import 'package:challenge2/app/widgets_appBar/first_screen_widgets_appBar.dart';
+import 'package:challenge2/app/widgets_appBar/first_screen_widgets_appbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {

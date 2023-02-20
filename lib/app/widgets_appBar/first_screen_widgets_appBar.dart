@@ -24,7 +24,7 @@ class FirstScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          TabBarFilters(),
+          const TabBarFilters(),
           Padding(
             padding: const EdgeInsets.fromLTRB(10, 10, 20, 10),
             child: Container(
@@ -66,19 +66,19 @@ class FirstScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const SizedBox(height: 5),
-                          Text(
+                          const Text(
                             'Sparky',
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(height: 7),
-                          Text(
+                          const Text(
                             'Golden Retriever',
                             style:
                                 TextStyle(fontSize: 14, fontFamily: 'Inter,'),
                           ),
                           const SizedBox(height: 5),
-                          Text(
+                          const Text(
                             'Female, 8 months old',
                             style: TextStyle(
                               fontSize: 12,
@@ -87,8 +87,8 @@ class FirstScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 22),
                           Row(
-                            children: [
-                              const Icon(
+                            children: const [
+                              Icon(
                                 Icons.location_pin,
                                 color: Color.fromRGBO(255, 95, 80, 1),
                               ),

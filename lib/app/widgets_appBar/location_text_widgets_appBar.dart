@@ -13,7 +13,6 @@ class LocationText extends StatelessWidget {
             fontWeight: FontWeight.normal,
             fontSize: 12,
             color: Colors.grey,
-            
             fontFamily: 'Inter',
           ),
         ),

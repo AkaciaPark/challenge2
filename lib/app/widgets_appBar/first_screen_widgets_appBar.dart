@@ -24,12 +24,14 @@ class FirstScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          // quadradinhos menu/dogs/cats/birds
           const TabBarFilters(),
+          // aqui começa os widgets dos dogs
           Padding(
-            padding: const EdgeInsets.fromLTRB(10, 10, 20, 10),
+            padding: const EdgeInsets.all(30),
             child: Container(
               width: double.infinity,
-              height: 150,
+              height: 140,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.white,
@@ -38,11 +40,11 @@ class FirstScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(
                   top: 10,
                   bottom: 10,
-                  left: 20,
+                  left: 10,
                   right: 20,
                 ),
                 child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(

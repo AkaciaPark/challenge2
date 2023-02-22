@@ -1,5 +1,5 @@
 import 'package:challenge2/app/theme/custom_theme.dart';
-import 'package:challenge2/app/widgets_appbar/first_screen_widgets_appbar.dart';
+import 'package:challenge2/app/first_screen/first_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

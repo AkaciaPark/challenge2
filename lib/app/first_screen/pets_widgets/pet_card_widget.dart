@@ -15,7 +15,9 @@ class PetCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 5),
+      padding: const EdgeInsets.only(
+        top: 5,
+      ),
       child: Container(
         width: double.infinity,
         height: 140,
@@ -42,11 +44,14 @@ class PetCardWidget extends StatelessWidget {
                     petImage: pet.petImage,
                   ),
                 ),
-                PetInfoWidgets(
-                  name: pet.petName,
-                  race: pet.petRace,
-                  distance: pet.petDistance,
-                  genderAndAge: pet.petGenderAndPetAge,
+                Padding(
+                  padding: const EdgeInsets.only(right: 140),
+                  child: PetInfoWidgets(
+                    name: pet.petName,
+                    race: pet.petRace,
+                    distance: pet.petDistance,
+                    genderAndAge: pet.petGenderAndPetAge,
+                  ),
                 ),
                 HeartIcon(
                   isLiked: pet.isLiked,

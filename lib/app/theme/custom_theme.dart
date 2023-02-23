@@ -5,7 +5,7 @@ class CustomTheme {
     appBarTheme: const AppBarTheme(
       backgroundColor: Colors.white,
     ),
-    scaffoldBackgroundColor: Color.fromRGBO(242, 242, 242, 1),
+    scaffoldBackgroundColor: Colors.white,
     fontFamily: 'Inter',
     textTheme: const TextTheme(
       headline4: TextStyle(

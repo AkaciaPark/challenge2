@@ -16,7 +16,6 @@ class PetInfoWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final theme = Theme.of(context).textTheme;
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,7 +47,6 @@ class PetInfoWidgets extends StatelessWidget {
             ),
             Text(
               distance,
-              //'2.5kms away',
               style: const TextStyle(
                 fontSize: 12,
                 color: Colors.grey,

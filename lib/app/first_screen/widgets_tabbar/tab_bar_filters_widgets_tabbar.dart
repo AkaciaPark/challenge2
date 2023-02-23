@@ -1,4 +1,4 @@
-import 'package:challenge2/app/first_screen/widgets_tab_bar/filter_button_widgets_tabbar.dart';
+import 'package:challenge2/app/first_screen/widgets_tabbar/filter_button_widgets_tabbar.dart';
 import 'package:flutter/material.dart';
 
 class TabBarFilters extends StatelessWidget {

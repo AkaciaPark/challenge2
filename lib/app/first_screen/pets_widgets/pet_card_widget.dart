@@ -5,6 +5,8 @@ import 'pet_image_widget.dart';
 import 'pet_info_widgets.dart';
 
 class PetCardWidget extends StatelessWidget {
+  // pedi o construtor dos Pets e estou usando nesse arquivo
+  // 
   final PetsModel pet;
 
   const PetCardWidget({

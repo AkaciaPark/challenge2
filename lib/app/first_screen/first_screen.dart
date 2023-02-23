@@ -1,6 +1,6 @@
 import 'package:challenge2/app/mock/pets_mock.dart';
 import 'package:challenge2/app/first_screen/pets_widgets/pet_list_widgets.dart';
-import 'package:challenge2/app/first_screen/widgets_tab_bar/tab_bar_filters_widgets_tab_bar.dart';
+import 'package:challenge2/app/first_screen/widgets_tabbar/tab_bar_filters_widgets_tabbar.dart';
 import 'package:flutter/material.dart';
 import 'widgets_appbar/home_appbar.dart';
 

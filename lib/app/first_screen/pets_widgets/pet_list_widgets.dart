@@ -13,21 +13,23 @@ class PetList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverList(
-      delegate: SliverChildBuilderDelegate(childCount: pets.length,
-          ((context, index) {
-        return Container(
-          color: const Color.fromRGBO(242, 242, 242, 1),
-          padding: const EdgeInsets.only(
-            left: 24,
-            top: 0,
-            bottom: 20,
-            right: 24,
-          ),
-          child: PetCardWidget(
-            pet: pets[index],
-          ),
-        );
-      })),
+      delegate: SliverChildBuilderDelegate(
+        childCount: pets.length,
+        (context, index) {
+          return Container(
+            color: const Color.fromRGBO(242, 242, 242, 1),
+            padding: const EdgeInsets.only(
+              left: 24,
+              top: 0,
+              bottom: 20,
+              right: 24,
+            ),
+            child: PetCardWidget(
+              pet: pets[index],
+            ),
+          );
+        },
+      ),
     );
   }
 }

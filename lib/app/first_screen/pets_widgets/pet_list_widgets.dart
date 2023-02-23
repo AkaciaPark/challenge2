@@ -25,6 +25,7 @@ class PetList extends StatelessWidget {
               right: 24,
             ),
             child: PetCardWidget(
+              // passar a posição do pet atual
               pet: pets[index],
             ),
           );

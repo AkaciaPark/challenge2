@@ -7,9 +7,9 @@ class AvatarInCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CircleAvatar(
+    return const CircleAvatar(
       backgroundImage:
-          Image.asset('assets/images/first_screen_images/woman.jpg').image,
+          AssetImage('assets/images/first_screen_images/woman.jpg'),
     );
   }
 }

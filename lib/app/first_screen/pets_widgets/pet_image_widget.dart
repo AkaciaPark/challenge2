@@ -11,13 +11,15 @@ class PetImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      // delimitando o tamanho do quadrado
       width: 120,
       height: 120,
       child: ClipRRect(
+        // ClipRRect: colocar bordas arredondadas nas imagens
         borderRadius: BorderRadius.circular(20),
         child: Image.asset(
           petImage,
-          fit: BoxFit.cover,
+          fit: BoxFit.cover, // pra imagem preencher todo o espaço do meu quadrado
         ),
       ),
     );

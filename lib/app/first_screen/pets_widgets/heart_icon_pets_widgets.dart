@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HeartIcon extends StatelessWidget {
@@ -16,7 +15,7 @@ class HeartIcon extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Icon(
-          isLiked ? Icons.favorite : CupertinoIcons.heart,
+          isLiked ? Icons.favorite : Icons.favorite_border,
           size: 30,
           color: isLiked ? const Color.fromRGBO(255, 95, 80, 1) : Colors.grey,
         ),

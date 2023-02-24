@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// coloco os textos(nome, raça, distância...) e os espaçamentos em SizedBox
 
 class PetInfoWidgets extends StatelessWidget {
   final String name;

@@ -17,7 +17,7 @@ class LocationText extends StatelessWidget {
           ),
         ),
         Text(
-          'Casa do Papai Noel - Polo Norte',
+          'Cameron St., Boston',
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.bold,

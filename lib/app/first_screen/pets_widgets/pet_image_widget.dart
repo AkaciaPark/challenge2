@@ -19,7 +19,8 @@ class PetImageWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         child: Image.asset(
           petImage,
-          fit: BoxFit.cover, // pra imagem preencher todo o espaço do meu quadrado
+          // pra imagem preencher todo o espaço do meu quadrado
+          fit: BoxFit.cover,
         ),
       ),
     );

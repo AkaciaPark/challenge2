@@ -1,6 +1,6 @@
 import 'package:challenge2/app/mock/pets_mock.dart';
 import 'package:challenge2/app/first_screen/pets_widgets/pet_list_widgets.dart';
-import 'package:challenge2/app/first_screen/widgets_tabbar/tab_bar_filters_widgets_tabbar.dart';
+import 'package:challenge2/app/first_screen/widgets_tabbar/tabbar_buttons_widgets_tabbar.dart';
 import 'package:flutter/material.dart';
 import 'widgets_appbar/home_appbar.dart';
 
@@ -30,7 +30,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   top: Radius.circular(30),
                 ),
               ),
-              child: const TabBarFilters(),
+              child: const TabBarButtons(),
             ),
           ),
           PetList(pets: pets),

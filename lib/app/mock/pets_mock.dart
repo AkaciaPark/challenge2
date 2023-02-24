@@ -1,5 +1,5 @@
 import 'package:challenge2/app/models/pets_model.dart';
-
+// PetsMock contem as informações necessárias dos pets; PetsModel + info = PetsMock
 class PetsMock {
   static List<PetsModel> pets = [
     PetsModel(

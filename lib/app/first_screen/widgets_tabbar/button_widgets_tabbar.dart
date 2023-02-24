@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class FilterButton extends StatelessWidget {
+class Button extends StatelessWidget {
   final String iconImage;
-  final String? filterTitle;
-  final Color buttonColor;
-  final Color textColor;
+  final String? textTabbar;
+  final Color buttonTabbarColor;
+  final Color textTabbarColor;
 
-  const FilterButton({
+  const Button({
     required this.iconImage,
-    required this.filterTitle,
-    required this.buttonColor,
-    required this.textColor,
+    required this.textTabbar,
+    required this.buttonTabbarColor,
+    required this.textTabbarColor,
     super.key,
   });
 
@@ -23,11 +23,11 @@ class FilterButton extends StatelessWidget {
       ),
       child: Container(
         height: 50,
-        width: filterTitle != null
-            ? 70.0 + (filterTitle!.length + iconImage.length)
+        width: textTabbar != null
+            ? 70.0 + (textTabbar!.length + iconImage.length)
             : 50,
         decoration: BoxDecoration(
-          color: buttonColor,
+          color: buttonTabbarColor,
           borderRadius: const BorderRadius.all(
             Radius.circular(16),
           ),
@@ -39,12 +39,13 @@ class FilterButton extends StatelessWidget {
               iconImage,
               height: 30,
             ),
-            if (filterTitle != null) ...{
+            // ... spread: tipo uma lista pra agrupar 2 ou mais widgets dentro do if
+            if (textTabbar != null) ...{
               const SizedBox(width: 5),
               Text(
-                filterTitle!,
+                textTabbar!,
                 style: TextStyle(
-                  color: textColor,
+                  color: textTabbarColor,
                   fontFamily: 'Inter',
                   fontSize: 13,
                   fontWeight: FontWeight.bold,

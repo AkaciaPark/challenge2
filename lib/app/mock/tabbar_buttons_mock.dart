@@ -27,5 +27,11 @@ class TabbarButtonsMock {
       buttonTabbarColor: Colors.white,
       textTabbarColor: Colors.black,
     ),
+    const TabbarButtonModel(
+      iconImage: 'assets/images/icons/bird_icon.png',
+      textTabbar: 'Birds',
+      buttonTabbarColor: Colors.white,
+      textTabbarColor: Colors.black,
+    ),
   ];
 }

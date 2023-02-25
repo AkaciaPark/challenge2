@@ -22,7 +22,7 @@ class TabbarButtonsList extends StatelessWidget {
         child: ListView.separated(
           shrinkWrap: true,
           scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) => const SizedBox(width: 8),
+          separatorBuilder: (context, index) => const SizedBox(width: 20),
           itemCount: buttonsWidgets.length,
           itemBuilder: (context, index) {
             return TabbarButtonWidget(

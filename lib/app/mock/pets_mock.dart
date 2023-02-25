@@ -1,8 +1,9 @@
-import 'package:challenge2/app/models/pets_model.dart';
+import 'package:challenge2/app/models/pet_model.dart';
+
 // PetsMock contem as informações necessárias dos pets; PetsModel + info = PetsMock
 class PetsMock {
-  static List<PetsModel> pets = [
-    PetsModel(
+  static List<PetModel> pets = [
+    PetModel(
       petName: 'Sparky',
       petRace: 'Golden Retriever',
       petGenderAndPetAge: 'Female, 2 years',
@@ -13,7 +14,7 @@ class PetsMock {
       petImages: [],
       isLiked: true,
     ),
-    PetsModel(
+    PetModel(
       petName: 'Daisy',
       petRace: 'Pug',
       petGenderAndPetAge: 'Female, 7 months',
@@ -24,7 +25,7 @@ class PetsMock {
       petImages: [],
       isLiked: false,
     ),
-    PetsModel(
+    PetModel(
       petName: 'Max',
       petRace: 'Spitz',
       petGenderAndPetAge: 'Male, 10 months',
@@ -34,7 +35,7 @@ class PetsMock {
       petImages: [],
       isLiked: false,
     ),
-    PetsModel(
+    PetModel(
       petName: 'Zoe',
       petRace: 'Chihuahua',
       petGenderAndPetAge: 'Female, 8 months',
@@ -44,7 +45,7 @@ class PetsMock {
       petImages: [],
       isLiked: false,
     ),
-    PetsModel(
+    PetModel(
       petName: 'Boo',
       petRace: 'Beagle',
       petGenderAndPetAge: 'Male, 6 months',

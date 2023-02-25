@@ -1,14 +1,14 @@
-class PetsModel {
+class PetModel {
   final String petName;
   final String petRace;
   final String petGenderAndPetAge;
   final String petDistance;
   final String petDescription;
   final String petImage;
-  final List <String> petImages;
+  final List<String> petImages;
   final bool isLiked;
 
-  PetsModel({
+  PetModel({
     required this.petName,
     required this.petRace,
     required this.petGenderAndPetAge,
@@ -18,6 +18,4 @@ class PetsModel {
     required this.petImages,
     required this.isLiked,
   });
-
-  
 }

@@ -2,7 +2,7 @@ import 'package:challenge2/app/models/tabbar_button_model.dart';
 import 'package:flutter/material.dart';
 
 class TabbarButtonWidget extends StatelessWidget {
- final TabbarButtonModel buttonsWidgets;
+  final TabbarButtonModel buttonsWidgets;
 
   const TabbarButtonWidget({
     required this.buttonsWidgets,
@@ -36,7 +36,7 @@ class TabbarButtonWidget extends StatelessWidget {
             Text(
               buttonsWidgets.textTabbar!,
               style: TextStyle(
-                color: buttonsWidgets.buttonTabbarColor,
+                color: buttonsWidgets.textTabbarColor,
                 fontFamily: 'Inter',
                 fontSize: 13,
                 fontWeight: FontWeight.bold,

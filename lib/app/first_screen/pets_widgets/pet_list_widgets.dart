@@ -1,9 +1,9 @@
-import 'package:challenge2/app/models/pets_model.dart';
+import 'package:challenge2/app/models/pet_model.dart';
 import 'package:challenge2/app/first_screen/pets_widgets/pet_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class PetList extends StatelessWidget {
-  final List<PetsModel> pets;
+  final List<PetModel> pets;
 
   const PetList({
     required this.pets,
@@ -13,20 +13,17 @@ class PetList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverList(
+
+      
       delegate: SliverChildBuilderDelegate(
+
         childCount: pets.length,
         (context, index) {
           return Container(
-            color: const Color.fromRGBO(242, 242, 242, 1),
-            padding: const EdgeInsets.only(
-              left: 24,
-              top: 0,
-              bottom: 20,
-              right: 24,
-            ),
+            padding: const EdgeInsets.only(bottom: 20),
             child: PetCardWidget(
               // passar a posição do pet atual
-              pet: pets[index],
+              pets: pets[index],
             ),
           );
         },

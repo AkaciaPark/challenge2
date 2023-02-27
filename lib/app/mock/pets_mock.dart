@@ -12,7 +12,14 @@ class PetsMock {
       petDescription:
           'She is shy at first, but will warm up when she\'s comfortable. She is not a ranch dog that guards animals and property as she whould rather be with her people; but she is comfortable around animals. She plays well with other dogs.',
       petImage: 'assets/images/first_screen_images/golden_home.png',
-      petImages: [],
+      petImages: [
+        'assets/images/second_screen_images/golden_1.png',
+        'assets/images/second_screen_images/golden_2.png',
+        'assets/images/second_screen_images/golden_3.png',
+        'assets/images/second_screen_images/golden_4.png',
+        'assets/images/second_screen_images/golden_5.png',
+        'assets/images/second_screen_images/golden_bg.png',
+      ],
       isLiked: true,
     ),
     PetModel(

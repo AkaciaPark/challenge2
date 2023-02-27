@@ -67,6 +67,7 @@ flutter:
   assets:
       - assets/images/first_screen_images/
       - assets/images/icons/
+      - assets/images/second_screen_images/
 
   fonts:
     - family: Inter

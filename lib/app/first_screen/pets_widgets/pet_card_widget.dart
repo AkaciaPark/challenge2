@@ -49,7 +49,8 @@ class PetCardWidget extends StatelessWidget {
                 name: pets.petName,
                 race: pets.petRace,
                 distance: pets.petDistance,
-                genderAndAge: pets.petGenderAndPetAge,
+                gender: pets.petGender,
+                age: pets.petAge,
               ),
             ),
             HeartIcon(

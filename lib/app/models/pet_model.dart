@@ -1,7 +1,8 @@
 class PetModel {
   final String petName;
   final String petRace;
-  final String petGenderAndPetAge;
+  final String petGender;
+  final String petAge;
   final String petDistance;
   final String petDescription;
   final String petImage;
@@ -11,7 +12,8 @@ class PetModel {
   PetModel({
     required this.petName,
     required this.petRace,
-    required this.petGenderAndPetAge,
+    required this.petGender,
+    required this.petAge,
     required this.petDistance,
     required this.petDescription,
     required this.petImage,

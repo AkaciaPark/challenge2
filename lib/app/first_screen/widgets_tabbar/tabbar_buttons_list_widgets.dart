@@ -30,7 +30,6 @@ class TabbarButtonsList extends StatelessWidget {
             );
           },
 
-          //TODO: fazer essa lista dinamica aquiiiiiiiiiiiiiiiiiiii
         ),
       ),
     );

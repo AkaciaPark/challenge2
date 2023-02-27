@@ -1,3 +1,4 @@
+import 'package:challenge2/app/second_screen/second_screen.dart';
 import 'package:challenge2/app/theme/custom_theme.dart';
 import 'package:challenge2/app/first_screen/first_screen.dart';
 import 'package:flutter/material.dart';

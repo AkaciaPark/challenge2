@@ -13,17 +13,14 @@ class PetList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverList(
-
-      
       delegate: SliverChildBuilderDelegate(
-
         childCount: pets.length,
         (context, index) {
           return Container(
             padding: const EdgeInsets.only(bottom: 20),
             child: PetCardWidget(
               // passar a posição do pet atual
-              pets: pets[index],
+              pet: pets[index],
             ),
           );
         },

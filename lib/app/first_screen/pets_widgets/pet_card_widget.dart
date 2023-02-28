@@ -41,7 +41,6 @@ class PetCardWidget extends StatelessWidget {
             right: 20,
           ),
           child: Row(
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(

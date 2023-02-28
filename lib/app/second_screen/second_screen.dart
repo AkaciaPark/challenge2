@@ -1,12 +1,17 @@
+import 'package:challenge2/app/second_screen/info_pet_widget/info_header_widget.dart';
+import 'package:challenge2/app/second_screen/list_pet_image_widget/list_images_and_big_image_widget.dart';
 import 'package:flutter/material.dart';
-
 import '../models/pet_model.dart';
 import 'widgets_appbar/go_back_icon_widget_appbar.dart';
 import 'widgets_appbar/heart_icon_widget_appbar.dart';
 
 class SecondScreen extends StatelessWidget {
   final PetModel pet;
-  const SecondScreen({required this.pet, super.key});
+
+  const SecondScreen({
+    required this.pet,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +24,19 @@ class SecondScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: const [
             HeartIconWidget(),
+          ],
+        ),
+      ),
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            InfoHeaderWidget(pet: pet),
+            const SizedBox(
+              height: 40,
+            ),
+            ListImagesAndBigImage(petImages: pet.petImages),
           ],
         ),
       ),

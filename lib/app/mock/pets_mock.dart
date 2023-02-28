@@ -7,7 +7,7 @@ class PetsMock {
       petName: 'Sparky',
       petRace: 'Golden Retriever',
       petGender: 'Female, ',
-      petAge: '2 years',
+      petAge: '8 months old',
       petDistance: '2.5 kms away',
       petDescription:
           'She is shy at first, but will warm up when she\'s comfortable. She is not a ranch dog that guards animals and property as she whould rather be with her people; but she is comfortable around animals. She plays well with other dogs.',

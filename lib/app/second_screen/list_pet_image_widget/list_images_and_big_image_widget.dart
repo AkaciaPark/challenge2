@@ -16,7 +16,7 @@ class ListImagesAndBigImage extends StatelessWidget {
       margin: const EdgeInsets.only(
         left: 35,
       ),
-      height: 230,
+      height: 248,
       width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

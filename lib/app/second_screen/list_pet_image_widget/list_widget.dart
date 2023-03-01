@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'image_card_list_widget.dart';
 
-// imageListWidget da Duda
+
 class ListWidget extends StatelessWidget {
   final List<String> petImages;
 

@@ -15,14 +15,33 @@ class ListWidget extends StatelessWidget {
     return Stack(
       children: [
         SizedBox(
-          width: 80,
-          height: 300,
+          width: 70,
+          height: 230,
           child: Center(
             child: ListView.builder(
               itemCount: petImages.length,
               itemBuilder: (context, index) {
                 return ImageCardListWidget(image: petImages[index]);
               },
+            ),
+          ),
+        ),
+        IgnorePointer(
+          child: Container(
+            width: 70,
+            height: 230,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.transparent,
+                  Colors.transparent,
+                  Colors.transparent,
+                  Colors.white.withOpacity(0.1),
+                  Colors.white,
+                ],
+              ),
             ),
           ),
         )

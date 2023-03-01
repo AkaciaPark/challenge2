@@ -2,6 +2,7 @@ import 'package:challenge2/app/second_screen/list_pet_image_widget/big_image_and
 import 'package:challenge2/app/second_screen/list_pet_image_widget/list_widget.dart';
 import 'package:flutter/material.dart';
 
+//lis_and_photo_widget da Duda
 class ListImagesAndBigImage extends StatelessWidget {
   final List<String> petImages;
 
@@ -16,7 +17,7 @@ class ListImagesAndBigImage extends StatelessWidget {
       margin: const EdgeInsets.only(
         left: 35,
       ),
-      height: 230,
+      height: 248,
       width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

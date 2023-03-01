@@ -12,12 +12,12 @@ class ImageCardListWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(
-        bottom: 20,
+        bottom: 10,
         left: 8,
       ),
       child: Container(
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
         decoration: BoxDecoration(
           border: Border.all(
             width: 1.5,

@@ -1,5 +1,7 @@
+import 'package:challenge2/app/second_screen/adopt_button_widget/adopt_button_card_widget.dart';
 import 'package:challenge2/app/second_screen/info_pet_widget/info_header_widget.dart';
 import 'package:challenge2/app/second_screen/list_pet_image_widget/list_images_and_big_image_widget.dart';
+import 'package:challenge2/app/second_screen/text_widget/about_text_widget.dart';
 import 'package:flutter/material.dart';
 import '../models/pet_model.dart';
 import 'widgets_appbar/go_back_icon_widget_appbar.dart';
@@ -34,9 +36,11 @@ class SecondScreen extends StatelessWidget {
           children: [
             InfoHeaderWidget(pet: pet),
             const SizedBox(
-              height: 30,
+              height: 8,
             ),
             ListImagesAndBigImage(petImages: pet.petImages),
+            AboutTextWidget(petDescription: pet.petDescription),
+            const AdoptButtonCardWidget(),
           ],
         ),
       ),

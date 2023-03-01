@@ -16,8 +16,8 @@ class ImageCardListWidget extends StatelessWidget {
         left: 8,
       ),
       child: Container(
-        width: 80,
-        height: 80,
+        width: 70,
+        height: 70,
         decoration: BoxDecoration(
           border: Border.all(
             width: 1.5,

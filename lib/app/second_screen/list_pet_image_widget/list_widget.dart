@@ -15,8 +15,8 @@ class ListWidget extends StatelessWidget {
     return Stack(
       children: [
         SizedBox(
-          width: 100,
-          height: 1500,
+          width: 80,
+          height: 300,
           child: Center(
             child: ListView.builder(
               itemCount: petImages.length,

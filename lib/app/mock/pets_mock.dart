@@ -18,7 +18,6 @@ class PetsMock {
         'assets/images/second_screen_images/golden_3.png',
         'assets/images/second_screen_images/golden_4.png',
         'assets/images/second_screen_images/golden_5.png',
-        'assets/images/second_screen_images/golden_bg.png',
       ],
       isLiked: true,
     ),

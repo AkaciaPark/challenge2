@@ -34,7 +34,7 @@ class SecondScreen extends StatelessWidget {
           children: [
             InfoHeaderWidget(pet: pet),
             const SizedBox(
-              height: 40,
+              height: 30,
             ),
             ListImagesAndBigImage(petImages: pet.petImages),
           ],

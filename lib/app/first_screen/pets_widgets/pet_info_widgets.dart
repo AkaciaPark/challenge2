@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 // coloco os textos(nome, raça, distância...) e os espaçamentos em SizedBox
 
@@ -28,29 +26,23 @@ class PetInfoWidgets extends StatelessWidget {
         const SizedBox(height: 5),
         Text(
           name,
-          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
         const SizedBox(height: 7),
         Text(
           race,
-          style: const TextStyle(fontSize: 14, fontFamily: 'Inter,'),
+          style: Theme.of(context).textTheme.bodyMedium,
         ),
         const SizedBox(height: 5),
         Row(
           children: [
             Text(
               gender,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-              ),
+              style: Theme.of(context).textTheme.bodySmall,
             ),
             Text(
               age,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-              ),
+              style: Theme.of(context).textTheme.bodySmall,
             ),
           ],
         ),
@@ -63,10 +55,7 @@ class PetInfoWidgets extends StatelessWidget {
             ),
             Text(
               distance,
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-              ),
+              style: Theme.of(context).textTheme.bodySmall,
             ),
           ],
         ),

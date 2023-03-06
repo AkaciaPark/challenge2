@@ -28,12 +28,7 @@ class NameRaceDistanceWidget extends StatelessWidget {
               const SizedBox(width: 4),
               Text(
                 name,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 26,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ],
           ),
@@ -43,12 +38,7 @@ class NameRaceDistanceWidget extends StatelessWidget {
               const SizedBox(width: 5),
               Text(
                 race,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 12,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Theme.of(context).textTheme.displaySmall,
               ),
             ],
           ),
@@ -63,11 +53,7 @@ class NameRaceDistanceWidget extends StatelessWidget {
               const SizedBox(width: 2),
               Text(
                 distance,
-                style: const TextStyle(
-                  color: Colors.grey,
-                  fontSize: 13,
-                  fontFamily: 'Inter',
-                ),
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
           ),

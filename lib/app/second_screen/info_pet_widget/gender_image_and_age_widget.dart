@@ -23,12 +23,7 @@ class GenderImageAndAgeWidget extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             age,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 12,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Inter',
-            ),
+            style: Theme.of(context).textTheme.displaySmall,
           ),
         ],
       ),

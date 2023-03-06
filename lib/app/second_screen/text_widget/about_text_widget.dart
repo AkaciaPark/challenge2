@@ -12,7 +12,6 @@ class AboutTextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      //height: 130,
       margin: const EdgeInsets.only(
         left: 25,
         right: 30,

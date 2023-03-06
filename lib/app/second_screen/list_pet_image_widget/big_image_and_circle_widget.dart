@@ -6,15 +6,15 @@ class BigImageAndCircleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 380,
-      height: 248,
+      width: 270,
+      height: 250,
       child: Stack(
         children: [
           Positioned(
-            left: 200,
+            left: 90,
             child: Container(
-              width: 248,
-              height: 248,
+              width: 240,
+              height: 240,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(200),
                 color: const Color.fromRGBO(254, 228, 107, 1),
@@ -22,7 +22,7 @@ class BigImageAndCircleWidget extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 230,
+            left: 120,
             child: Image.asset(
               'assets/images/second_screen_images/golden_bg.png',
               height: 248,

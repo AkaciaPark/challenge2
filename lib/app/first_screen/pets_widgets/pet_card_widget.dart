@@ -17,8 +17,10 @@ class PetCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // torna um widget clicável
     return InkWell(
       onTap: () {
+        // push: entra na tela
         Navigator.push(
           context,
           MaterialPageRoute(

@@ -21,7 +21,6 @@ class GenderImageAndAgeWidget extends StatelessWidget {
             width: 30,
           ),
           const SizedBox(height: 10),
-          //colocar a idade
           Text(
             age,
             style: const TextStyle(

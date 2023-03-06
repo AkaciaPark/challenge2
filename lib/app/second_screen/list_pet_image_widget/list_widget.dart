@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'image_card_list_widget.dart';
 
-
 class ListWidget extends StatelessWidget {
   final List<String> petImages;
 

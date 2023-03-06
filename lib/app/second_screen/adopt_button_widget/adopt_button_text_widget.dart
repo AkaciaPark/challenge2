@@ -6,20 +6,24 @@ class AdoptButtonTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: const [
         Icon(
           Icons.pets_rounded,
           color: Colors.white,
         ),
+        SizedBox(
+          width: 12,
+        ),
         Text(
           'ADOPT',
           style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
-              fontFamily: 'Inter',
-              fontWeight: FontWeight.w500),
-        )
+            color: Colors.white,
+            fontSize: 16,
+            fontFamily: 'Inter',
+            fontWeight: FontWeight.w500,
+          ),
+        ),
       ],
     );
   }

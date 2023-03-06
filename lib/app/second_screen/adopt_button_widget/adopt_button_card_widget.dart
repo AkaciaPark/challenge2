@@ -8,12 +8,12 @@ class AdoptButtonCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      height: 65,
+      height: 30,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
-            height: 65,
+            height: 30,
             width: 200,
             decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(

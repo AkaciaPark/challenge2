@@ -14,6 +14,8 @@ class GoBackIconWidget extends StatelessWidget {
           Icons.arrow_back_ios_new,
           color: Color.fromRGBO(112, 112, 112, 1),
         ),
+        //pop -> voltar para a tela antiga; pensar como um stack
+        //navigator -> navegação entre telas
         onPressed: () => Navigator.of(context).pop(),
       ),
     );

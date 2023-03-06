@@ -12,6 +12,7 @@ class HeartIconWidget extends StatelessWidget {
         bottom: 10,
       ),
       child: Container(
+        // tamanho do meu quadrado que envolve o <3
         height: 40,
         width: 40,
         decoration: BoxDecoration(
@@ -22,7 +23,7 @@ class HeartIconWidget extends StatelessWidget {
             child: Icon(
           Icons.favorite,
           size: 25,
-          color:  Color.fromRGBO(255, 95, 80, 1),
+          color: Color.fromRGBO(255, 95, 80, 1),
         )),
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:challenge2/app/app_assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class AvatarInCircle extends StatelessWidget {
@@ -8,8 +9,7 @@ class AvatarInCircle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CircleAvatar(
-      backgroundImage:
-          AssetImage('assets/images/first_screen_images/woman.jpg'),
+      backgroundImage: AssetImage(AppAssets.avataraAppbarImage),
     );
   }
 }

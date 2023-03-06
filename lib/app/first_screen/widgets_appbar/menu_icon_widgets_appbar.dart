@@ -1,3 +1,4 @@
+import 'package:challenge2/app/app_assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class MenuIcon extends StatelessWidget {
@@ -6,7 +7,7 @@ class MenuIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(
-      'assets/images/icons/menu_icon.png',
+      AppAssets.menuIconAppbarImage,
       width: 40,
       height: 40,
     );

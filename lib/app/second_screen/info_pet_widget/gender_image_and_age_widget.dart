@@ -1,3 +1,4 @@
+import 'package:challenge2/app/app_assets/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class GenderImageAndAgeWidget extends StatelessWidget {
@@ -17,7 +18,7 @@ class GenderImageAndAgeWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Image.asset(
-            'assets/images/icons/male_gender_icon.png',
+            AppAssets.genderIconImage,
             width: 30,
           ),
           const SizedBox(height: 10),

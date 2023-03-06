@@ -14,9 +14,6 @@ class TabbarButtonWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12),
       height: 50,
-      // width: textTabbar != null
-      //     ? 70.0 + (textTabbar!.length + iconImage.length)
-      //     : 50,
       decoration: BoxDecoration(
         color: buttonsWidgets.buttonTabbarColor,
         borderRadius: const BorderRadius.all(

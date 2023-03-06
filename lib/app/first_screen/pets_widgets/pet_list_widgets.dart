@@ -19,7 +19,6 @@ class PetList extends StatelessWidget {
           return Container(
             padding: const EdgeInsets.only(bottom: 20),
             child: PetCardWidget(
-              // passar a posição do pet atual
               pet: pets[index],
             ),
           );

@@ -20,31 +20,21 @@ class AboutTextWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
-            padding: EdgeInsets.only(
+          Padding(
+            padding: const EdgeInsets.only(
               left: 15,
               top: 20,
             ),
             child: Text(
               'About',
-              style: TextStyle(
-                color: Colors.black,
-                fontFamily: 'Inter',
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context).textTheme.displayLarge,
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Text(
               petDescription,
-              style: const TextStyle(
-                color: Colors.grey,
-                height: 2,
-                fontFamily: 'Inter',
-                fontSize: 14,
-              ),
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ),
         ],

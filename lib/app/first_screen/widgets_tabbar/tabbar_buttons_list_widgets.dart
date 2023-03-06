@@ -29,7 +29,6 @@ class TabbarButtonsList extends StatelessWidget {
               buttonsWidgets: buttonsWidgets[index],
             );
           },
-
         ),
       ),
     );

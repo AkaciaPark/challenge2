@@ -17,57 +17,66 @@ class PetCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // final cardWidth = MediaQuery.of(context).size.width * 0.867;
+    // final cardHeight = MediaQuery.of(context).size.height * 0.185;
+
     // torna um widget clicável
-    return InkWell(
-      onTap: () {
-        // push: entra na tela
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SecondScreen(pet: pet),
+    return Material(
+      clipBehavior: Clip.hardEdge,
+      color: Colors.white,
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        hoverColor: Colors.transparent,
+        onTap: () {
+          // push: entra na tela
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SecondScreen(pet: pet),
+            ),
+          );
+        },
+        child: Container(
+          width: double.infinity,
+          height: 140,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            //color: Colors.white,
           ),
-        );
-      },
-      child: Container(
-        width: double.infinity,
-        height: 140,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.white,
-        ),
-        child: Padding(
-          padding: const EdgeInsets.only(
-            top: 10,
-            bottom: 10,
-            left: 10,
-            right: 20,
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+          child: Padding(
+            padding: const EdgeInsets.only(
+              top: 10,
+              bottom: 10,
+              left: 10,
+              right: 20,
+            ),
+            child: Row(
+              //crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: PetImageWidget(
+                    petImage: pet.petImage,
+                  ),
                 ),
-                child: PetImageWidget(
-                  petImage: pet.petImage,
+                const SizedBox(width: 12),
+                // ver mais sobre expanded
+                Expanded(
+                  child: PetInfoWidgets(
+                    name: pet.petName,
+                    race: pet.petRace,
+                    distance: pet.petDistance,
+                    gender: pet.petGender,
+                    age: pet.petAge,
+                  ),
                 ),
-              ),
-              const SizedBox(width: 12),
-              // ver mais sobre expanded
-              Expanded(
-                child: PetInfoWidgets(
-                  name: pet.petName,
-                  race: pet.petRace,
-                  distance: pet.petDistance,
-                  gender: pet.petGender,
-                  age: pet.petAge,
+                HeartIcon(
+                  isLiked: pet.isLiked,
                 ),
-              ),
-              HeartIcon(
-                isLiked: pet.isLiked,
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

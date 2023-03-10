@@ -30,7 +30,7 @@ class TabbarButtonsMock {
     ),
     const TabbarButtonModel(
       iconImage: AppAssets.filterBirdsTabbarImage,
-      textTabbar: 'Birds',
+      textTabbar: 'Pinguinzão da Antártidadsdasdsdassadsadasds',
       buttonTabbarColor: Colors.white,
       textTabbarColor: Colors.black,
     ),

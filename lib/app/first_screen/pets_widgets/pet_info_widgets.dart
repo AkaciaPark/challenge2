@@ -19,25 +19,37 @@ class PetInfoWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //final mediaQuery = MediaQuery.of(context).size;
+    // final nameHeight = MediaQuery.of(context).size.height * 0.145;
+    // final raceHeight = MediaQuery.of(context).size.height * 0.010;
+    // final genderAndAgeHeight = MediaQuery.of(context).size.height * 0.003;
+    // final distanceHeight = MediaQuery.of(context).size.height * 0.020;
+
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 5),
+        SizedBox(height: 5),
         Text(
           name,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          softWrap: true,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
-        const SizedBox(height: 7),
+        SizedBox(height: 7),
         Text(
           race,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
-        const SizedBox(height: 5),
+        SizedBox(height: 5),
         Row(
           children: [
             Text(
               gender,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              softWrap: true,
               style: Theme.of(context).textTheme.bodySmall,
             ),
             Text(
@@ -46,7 +58,7 @@ class PetInfoWidgets extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 22),
+        SizedBox(height: 12),
         Row(
           children: [
             const Icon(

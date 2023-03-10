@@ -16,9 +16,11 @@ class _FirstScreenState extends State<FirstScreen> {
   // to instanciando uma lista
   final pets = PetsMock.pets;
   final tabbarButtons = TabbarButtonsMock.buttonsWidgets;
-  
+
   @override
   Widget build(BuildContext context) {
+    final firstScreenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: const Color.fromRGBO(242, 242, 242, 1),
       body: CustomScrollView(
@@ -28,7 +30,7 @@ class _FirstScreenState extends State<FirstScreen> {
             child: Container(
               color: Colors.white,
               child: Container(
-                width: double.infinity,
+                width: firstScreenWidth,
                 decoration: const BoxDecoration(
                   color: Color.fromRGBO(242, 242, 242, 1),
                   borderRadius: BorderRadius.vertical(

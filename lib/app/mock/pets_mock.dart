@@ -4,7 +4,8 @@ import 'package:challenge2/app/models/pet_model.dart';
 class PetsMock {
   static List<PetModel> pets = [
     PetModel(
-      petName: 'Sparky',
+      petName:
+          'SparkyDSDHUSDHUHUSHDUSHDUSDUHSHUDAHUUDHUDHUDHUASHUASDHUSDHDSHUDSHUSDHUSDHUSADHUHUSD',
       petRace: 'Golden Retriever',
       petGender: 'Female, ',
       petAge: '8 months old',

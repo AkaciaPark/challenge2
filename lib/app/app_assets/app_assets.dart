@@ -1,3 +1,4 @@
+// criação de uma classe com static const com os caminhos das imagens, para facilitar e ser mais organizado
 class AppAssets {
   static const avataraAppbarImage =
       'assets/images/first_screen_images/woman.jpg';

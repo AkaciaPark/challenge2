@@ -15,21 +15,20 @@ class TabbarButtonsList extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 30.0),
       height: 50,
-      child: Padding(
+      child: ListView.separated(
+        // TODO: experiencia melhor para o usuario
         padding: const EdgeInsets.only(
           left: 25,
         ),
-        child: ListView.separated(
-          shrinkWrap: true,
-          scrollDirection: Axis.horizontal,
-          separatorBuilder: (context, index) => const SizedBox(width: 20),
-          itemCount: buttonsWidgets.length,
-          itemBuilder: (context, index) {
-            return TabbarButtonWidget(
-              buttonsWidgets: buttonsWidgets[index],
-            );
-          },
-        ),
+        //shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        separatorBuilder: (context, index) => const SizedBox(width: 20),
+        itemCount: buttonsWidgets.length,
+        itemBuilder: (context, index) {
+          return TabbarButtonWidget(
+            buttonsWidgets: buttonsWidgets[index],
+          );
+        },
       ),
     );
   }

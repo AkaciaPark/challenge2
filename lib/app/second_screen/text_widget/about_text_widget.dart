@@ -10,11 +10,14 @@ class AboutTextWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.only(
-        left: 25,
+    //final containerWidth = MediaQuery.of(context).size.width * 0.997;
+    //final containerHeight = MediaQuery.of(context).size.height * 0.215;
+
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 30,
         right: 30,
+        top: 2,
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -22,7 +25,7 @@ class AboutTextWidget extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-              left: 15,
+              // left: 15,
               top: 20,
             ),
             child: Text(
@@ -30,12 +33,9 @@ class AboutTextWidget extends StatelessWidget {
               style: Theme.of(context).textTheme.displayLarge,
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15),
-            child: Text(
-              petDescription,
-              style: Theme.of(context).textTheme.displayMedium,
-            ),
+          Text(
+            petDescription,
+            style: Theme.of(context).textTheme.displayMedium,
           ),
         ],
       ),

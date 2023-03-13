@@ -17,6 +17,8 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final secondScreenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -30,20 +32,27 @@ class SecondScreen extends StatelessWidget {
         ),
       ),
       body: SizedBox(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            InfoHeaderWidget(pet: pet),
-            const SizedBox(
-              height: 8,
-            ),
-            ListImagesAndBigImage(petImages: pet.petImages),
-            AboutTextWidget(petDescription: pet.petDescription),
-            const AdoptButtonCardWidget(),
-          ],
+        width: secondScreenWidth,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              //flex
+              InfoHeaderWidget(pet: pet),
+              //fixo
+              const SizedBox(
+                height: 8,
+              ),
+              //fixo
+              ListImagesAndBigImage(petImages: pet.petImages),
+              //flex
+              AboutTextWidget(petDescription: pet.petDescription),
+            ],
+          ),
         ),
       ),
+      //colocado bottomNavigationBar para que fique no final da tela, do jeito que deve estar
+      bottomNavigationBar: const AdoptButtonCardWidget(),
     );
   }
 }

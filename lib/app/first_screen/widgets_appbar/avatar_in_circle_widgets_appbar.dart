@@ -8,7 +8,6 @@ class AvatarInCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final avatarWidth = MediaQuery.of(context).size.width * 0.1253;
 
     return const CircleAvatar(
       backgroundImage: AssetImage(AppAssets.avataraAppbarImage),

@@ -1,7 +1,6 @@
 import 'package:challenge2/app/models/pet_model.dart';
-import 'package:challenge2/app/second_screen/info_pet_widget/gender_image_and_age_widget.dart';
-import 'package:challenge2/app/second_screen/info_pet_widget/name_race_distance_widget.dart';
 import 'package:flutter/material.dart';
+import '../../app_assets/app_assets.dart';
 
 class InfoHeaderWidget extends StatelessWidget {
   final PetModel pet;
@@ -13,21 +12,72 @@ class InfoHeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(
-        left: 25,
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 30,
         right: 30,
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Column(
         children: [
-          NameRaceDistanceWidget(
-            name: pet.petName,
-            race: pet.petRace,
-            distance: pet.petDistance,
+          const SizedBox(
+            height: 4,
           ),
-          GenderImageAndAgeWidget(age: pet.petAge),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  pet.petName,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+              ),
+              SizedBox(
+                width: 30,
+                height: 30,
+                child: Image.asset(
+                  AppAssets.genderIconImage,
+                  width: 30,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Text(
+                  pet.petRace,
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
+              ),
+              Text(
+                pet.petAge,
+                style: Theme.of(context).textTheme.displaySmall,
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          Row(
+            children: [
+              const Icon(
+                Icons.location_pin,
+                size: 20,
+                color: Color.fromRGBO(255, 95, 80, 1),
+              ),
+              const SizedBox(width: 2),
+              Text(
+                pet.petDistance,
+                style: Theme.of(context).textTheme.bodySmall,
+              ),
+            ],
+          ),
         ],
       ),
     );

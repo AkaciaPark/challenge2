@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// coloco os textos(nome, raça, distância...) e os espaçamentos em SizedBox
 
+// coloco os textos(nome, raça, distância...) e os espaçamentos em SizedBox
 class PetInfoWidgets extends StatelessWidget {
   final String name;
   final String race;
@@ -19,7 +19,7 @@ class PetInfoWidgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //final mediaQuery = MediaQuery.of(context).size;
+    // final mediaQuery = MediaQuery.of(context).size;
     // final nameHeight = MediaQuery.of(context).size.height * 0.145;
     // final raceHeight = MediaQuery.of(context).size.height * 0.010;
     // final genderAndAgeHeight = MediaQuery.of(context).size.height * 0.003;
@@ -29,7 +29,7 @@ class PetInfoWidgets extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(
           name,
           maxLines: 1,
@@ -37,12 +37,15 @@ class PetInfoWidgets extends StatelessWidget {
           softWrap: true,
           style: Theme.of(context).textTheme.bodyLarge,
         ),
-        SizedBox(height: 7),
+        const SizedBox(height: 7),
         Text(
           race,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          softWrap: true,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Row(
           children: [
             Text(
@@ -54,11 +57,14 @@ class PetInfoWidgets extends StatelessWidget {
             ),
             Text(
               age,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              softWrap: true,
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ],
         ),
-        SizedBox(height: 12),
+        const SizedBox(height: 12),
         Row(
           children: [
             const Icon(

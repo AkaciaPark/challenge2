@@ -16,7 +16,6 @@ class TabbarButtonsList extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 30.0),
       height: 50,
       child: ListView.separated(
-        // TODO: experiencia melhor para o usuario
         padding: const EdgeInsets.only(
           left: 25,
         ),

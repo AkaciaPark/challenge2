@@ -17,14 +17,11 @@ class PetCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final cardWidth = MediaQuery.of(context).size.width * 0.867;
-    // final cardHeight = MediaQuery.of(context).size.height * 0.185;
-
-    // torna um widget clicável
     return Material(
       clipBehavior: Clip.hardEdge,
       color: Colors.white,
       borderRadius: BorderRadius.circular(20),
+          // torna um widget clicável
       child: InkWell(
         hoverColor: Colors.transparent,
         onTap: () {
@@ -41,7 +38,6 @@ class PetCardWidget extends StatelessWidget {
           height: 140,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
-            //color: Colors.white,
           ),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -51,7 +47,6 @@ class PetCardWidget extends StatelessWidget {
               right: 20,
             ),
             child: Row(
-              //crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
                   decoration: BoxDecoration(

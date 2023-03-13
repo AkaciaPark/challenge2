@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class ImageCardListWidget extends StatelessWidget {
+class ImageCardWidget extends StatelessWidget {
   final String image;
 
-  const ImageCardListWidget({
+  const ImageCardWidget({
     required this.image,
     super.key,
   });

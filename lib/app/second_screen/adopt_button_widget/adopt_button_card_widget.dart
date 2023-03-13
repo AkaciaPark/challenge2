@@ -6,25 +6,22 @@ class AdoptButtonCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.infinity,
-      height: 25,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          Container(
-            height: 25,
-            width: 200,
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(40),
-              ),
-              color: Color.fromRGBO(255, 95, 80, 1),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 40),
+          height: 65,
+          //width: 200,
+          decoration: const BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(40),
             ),
-            child: const AdoptButtonTextWidget(),
+            color: Color.fromRGBO(255, 95, 80, 1),
           ),
-        ],
-      ),
+          child: const AdoptButtonTextWidget(),
+        ),
+      ],
     );
   }
 }

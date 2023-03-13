@@ -5,6 +5,9 @@ class HeartIconWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final iconWidth = MediaQuery.of(context).size.width * 0.102;
+    final iconHeight = MediaQuery.of(context).size.width * 0.102;
+
     return Padding(
       padding: const EdgeInsets.only(
         right: 10,
@@ -13,8 +16,8 @@ class HeartIconWidget extends StatelessWidget {
       ),
       child: Container(
         // tamanho do meu quadrado que envolve o <3
-        height: 40,
-        width: 40,
+        height: iconHeight,
+        width: iconWidth,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: const Color.fromRGBO(255, 230, 227, 1),

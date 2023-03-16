@@ -12,7 +12,6 @@ class PetImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return SizedBox(
-      // delimitando o tamanho do quadrado
       height: 140,
       child: AspectRatio(
         aspectRatio: 1,

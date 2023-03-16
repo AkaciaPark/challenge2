@@ -48,6 +48,7 @@ class ListImagesAndBigImage extends StatelessWidget {
                         Colors.transparent,
                         Colors.transparent,
                         Colors.transparent,
+                        Colors.transparent,
                         Colors.white.withOpacity(0.1),
                         Colors.white,
                       ],
